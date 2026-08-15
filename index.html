@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#081633" />
+  <title>Before You Enter My Heart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="aurora" aria-hidden="true"></div>
+  <div id="particles" aria-hidden="true"></div>
+  <div id="petals" aria-hidden="true"></div>
+  <div id="sparkles" aria-hidden="true"></div>
+
+  <main>
+    <section class="screen login-screen" id="loginScreen" aria-labelledby="pageTitle">
+      <div class="glass-card" id="loginCard">
+        <h1 id="pageTitle">Before You Enter<br><span>♥</span></h1>
+        <p class="question">What is my babyy's favorite flower?</p>
+
+        <div class="flowers" aria-label="Choose a flower">
+          <button class="flower-card wrong" type="button" data-flower="Roses" aria-label="Choose Roses">
+            <img src="images/roses-placeholder.svg" alt="Illustration of pink roses" />
+            <span><b>🌹</b> Roses</span>
+          </button>
+          <button class="flower-card wrong" type="button" data-flower="Sunflowers" aria-label="Choose Sunflowers">
+            <img src="images/sunflowers-placeholder.svg" alt="Illustration of sunflowers" />
+            <span><b>🌻</b> Sunflowers</span>
+          </button>
+          <button class="flower-card correct" type="button" data-flower="Tulips" aria-label="Choose Tulips">
+            <img src="images/tulips-placeholder.svg" alt="Illustration of tulips" />
+            <span><b>🌷</b> Tulips</span>
+          </button>
+        </div>
+        <p id="message" class="message" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="screen reveal-screen" id="revealScreen" aria-hidden="true">
+      <div class="reveal-content">
+        <p class="success">You Chose Correctly <span>💙</span></p>
+        <div class="bouquet-wrap">
+          <div class="halo"></div>
+          <button class="bouquet-button" id="bouquetButton" type="button" aria-label="Send a burst of love">
+            <img class="bouquet" src="images/blue-tulip-bouquet-placeholder.svg" alt="A luxury bouquet of blue tulips" />
+          </button>
+          <p class="bouquet-hint">tap the bouquet for a little magic</p>
+        </div>
+        <p class="romantic-message"><span id="typewriter"></span><i class="cursor">|</i></p>
+        <button class="restart" id="restart" type="button">Relive the magic ✦</button>
+      </div>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
