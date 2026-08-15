@@ -38,7 +38,7 @@ function burstHearts(origin) {
 document.querySelectorAll('.flower-card').forEach(card => card.addEventListener('click', event => {
   if (card.classList.contains('wrong')) {
     card.classList.remove('shake'); void card.offsetWidth; card.classList.add('shake');
-    message.textContent = "Oops! That's not my favorite flower 💔 Try again.";
+    message.textContent = "Oops! That's not my babyy's favorite flower, Try again.";
     const r = card.getBoundingClientRect(); burstHearts({ x:r.left + r.width/2, y:r.top + r.height/2 });
     return;
   }
