@@ -4,7 +4,7 @@ const sparkles = document.querySelector('#sparkles');
 const loginScreen = document.querySelector('#loginScreen');
 const revealScreen = document.querySelector('#revealScreen');
 const message = document.querySelector('#message');
-const phrase = 'A bouquet of blue tulips just for you 💙🌷';
+const phrase = 'A bouquet of blue tulips just for my babyyyy 💙';
 let typingTimer;
 
 function makeDecorations(parent, className, amount) {
